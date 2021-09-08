@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>LOGIN PAGE</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="login.css">
+    <script>
+    function validateform(){
+        var Username=document.myform.Username.value;
+        var password=document.myform.password.value;
+        if(Username==null|| Username=""){
+            alert("Please fill out the name field");
+            return false;
+        }
+        else if(password.length<6){
+            alert("Password should consist atleast 6 characters");
+            return false;
+        }
+    }
+    </script>
+    </head>
+    <body>
+        <form name="myform" method="post" action="D:\Program Files (x86)\Brackets\WEBPAGE\index.html" onsubmit="return validateform()">
+        <div class="container">
+            
+            <div class="row col-md-6 col-md-offset-3">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h1><center>LOGIN PAGE</center></h1>
+                        <div class="form-group">
+                            <label for="Username">Username</label>
+                            <input type="text" placeholder="Enter username" class="form-control" name="Username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" placeholder="Enter password" class="form-control" name="password" required>
+                        </div>
+                       <input type="submit" class="btn" value="LOGIN">               
+                    </div>
+                </div> 
+            </div>
+        </div>
+        </form>
+        
+    </body>
+</html>
