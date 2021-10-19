@@ -1,3 +1,6 @@
+<?php
+include("feedback.php");
+?>
 <!DOCTYPE html>
 <html lang = "en">
     <head>
@@ -106,6 +109,7 @@
                 <p>2000.00 Rs</p>
             </div>
         </div>
+        <h2 class="title">Latest Product</h2>
         <div class="row">
             <div class="col-4">
                 <img src="images/product5.jfif">
@@ -149,6 +153,105 @@
             </div>
         </div>
     </div>
+    <p><center>Ezone now no more just an electronics store! Shop anything from anywhere!</center></p>
+    <center><embed width="50%" height="450" src="https://www.youtube.com/embed/zjRWanauFHg"></center>
+<!-----Feedback----->
+<div class="container1">
+        <div class="row col-md-6 col-md-offset-3">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h1><center>FEEDBACK</center></h1>
+                        <form action="" method="POST">
+                            Name:<input type="text" name="name" required><br><br>                        
+                            Mail:<input type="Email" name="mailid"><br><br>
+                            Country:<input type="text" name="country"><br><br>
+                            Subject:<input type="text" name="subject" required><br><br>
+                            <input type="submit" name="submit">
+                        </form>
+                    </div>
+                </div>
+        </div>
+ </div>
+<?php
+if(isset($_POST['submit']))
+{
+    $name=$_POST['name'];    
+    $mailid=$_POST['mailid'];
+    $country=$_POST['country'];
+    $subject=$_POST['subject'];
+    $result=mysqli_query($mysqli,"INSERT into feedback values('','$name','$mailid','$country','$subject')");
+
+        
+        if($result)
+        {
+            echo "Feedback succesfully submitted";
+            
+        }
+        else
+        {
+            echo "Could not submit feedback";
+        }
+}  
+
+       
+?>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("footer").toggle();
+    $("#flip").click(function(){
+    $("#panel").slideDown(5000);
+  });
+  $("#stop").click(function(){
+    $("#panel").stop();
+  });
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #555;
+  color: white;
+  border: solid 1px #666;
+  border-radius: 3px;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+
+
+<br><center><button>CLICK HERE TO SEE DEVELOPER DETAILS</button></center>
+
+<footer>
+            
+                
+                Developed by : Nirzar Modi &nbsp;
+                ||GitHub profile :<a href="https://github.com/nizi-16" class="btn">GitHub</a> &nbsp;
+                ||Contact Number : 9901751551 &nbsp;
+                ||<a href="mailto: nirzar.modi@gmail.com " class="btn">Send Mail</a> 
+                
+            
+</footer>
+<button id="stop">Stop sliding</button>
+
+<div id="flip">Click to see the store details</div>
+<div id="panel">
+    Developed In : 2001 <br>
+    Online Website :<a href="https://www.futureretail.in/businesses/e-zone.html" class="btn">WEBSITE</a> <br>
+    Contact Number : For EZone<br>
+                        care@ezoneonline.in <br>
+                        Toll Free Customer Care No: 1800 2100 005 <br>
+    <a href="mailto: care@ezoneonline.in " class="btn">Send Mail</a> 
+</div>
+    
     
 </body>
 </html>
