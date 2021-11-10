@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed>
+  <rev>
+    <name>Nirzar</name>
+    <mail>nirzar.modi@gmail.com</mail>
+    <country>India</country>
+    <subject>Inquiry</subject>
+  </rev>
+  <rev>
+    <name>Suyash</name>
+    <mail>hkeshri2011@gmail.com</mail>
+    <country>India</country>
+    <subject>Damaged Goods</subject>
+  </rev>
+  <rev>
+    <name>JaiShankar</name>
+    <mail>Shankarjai.2020@gmail.com</mail>
+    <country>Jakarta</country>
+    <subject>Delayed Service</subject>
+  </rev>
+  <rev>
+    <name>JaiShankar</name>
+    <mail>Shankarjai.2020@gmail.com</mail>
+    <country>Jakarta</country>
+    <subject>Delayed Service</subject>
+  </rev>
+  <rev>
+    <name>LeChongWi</name>
+    <mail>Chonglee.sing@gmail.com</mail>
+    <country>Singapore</country>
+    <subject>Thank you</subject>
+  </rev>
+</feed>

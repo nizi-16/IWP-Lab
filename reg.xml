@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reg>
+  <user>
+    <name>Nirzar</name>
+    <email>nirzar.modi@gmail.com</email>
+    <website>modigrp.in</website>
+    <comment>Cool</comment>
+    <gender>Male</gender>
+  </user>
+  <user>
+    <name>Sparsh</name>
+    <email>sparsh.jain@gmail.com</email>
+    <website>jainindustries.in</website>
+    <comment>Coolio</comment>
+    <gender>Male</gender>
+  </user>
+</reg>
